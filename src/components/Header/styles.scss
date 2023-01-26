@@ -1,0 +1,14 @@
+.header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.426);
+
+    &-title {
+        font-weight: 800;
+        font-size: xx-large;
+    }
+}
+
