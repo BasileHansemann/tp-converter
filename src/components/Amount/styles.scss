@@ -1,16 +1,15 @@
 .amount {
-    padding: 10px;
-
+    padding: 20px;
+  
     &-top {
-        display: flex;
-        justify-content: center;
-        padding: 10px;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
     }
     &-input {
-        margin: 0 7px 0 7px;
-        width: 100px;
-        border: hidden;
-        border-radius: 3px;
+      margin: 0 7px 0 7px;
+      width: 100px;
+      border: hidden;
+      border-radius: 3px;
     }
-}
-
+  }

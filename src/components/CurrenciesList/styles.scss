@@ -1,29 +1,42 @@
-::-webkit-scrollbar {
-  display: none;
-}
-
 .currencies {
-  &-title{
-    padding: 8px;
-  }
-
-  &-List {
-    height: 50vh;
-    overflow: auto;
-    background-color: rgb(247, 229, 169);
-    border-radius: 10px;
-  }
-
-  &-item {
-    padding: 0.5rem;
-    border-top: 1px solid black;
-    transition-duration: 1s;
-    text-align: left;
-
-    &:hover {
-      cursor: pointer;
-      background-color: rgb(242, 191, 23);
-      transition-duration: 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-title {
+      padding-bottom: 20px;
+  
+    }
+  
+    &-List {
+      height: 60vh;
+      overflow: auto;
+      width: 80%;
+      border-radius: 3px;
+      box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #1385fe,
+        0 0 0.8rem #1385fe,
+        0 0 2.8rem #1385fe,
+        inset 0 0 1.3rem #1385fe;
+    }
+  
+    &-item {
+      padding: 0.5rem;
+      border-top: 1px solid rgba(159, 186, 64, 0.426);
+      border-radius: 3px;
+      transition-duration: 1s;
+      text-align: left;
+  
+      &:hover {
+        cursor: pointer;
+        background-color: rgb(23, 169, 242);
+        box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #1385fe,
+        0 0 0.8rem #1385fe,
+        0 0 2.8rem #1385fe,
+        inset 0 0 1.3rem #1385fe;
+        transition-duration: 0.2s;
+      }
     }
   }
-}

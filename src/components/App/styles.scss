@@ -1,12 +1,22 @@
 
 
 .app {
-  border: 1px solid black;
-  border-radius: 20px;
-  width: 500px;
-  margin: 1em auto;
+  min-height: 100vh;
   text-align: center;
-  background: linear-gradient(293deg, rgba(124,107,52,1) 0%, rgba(242,191,23,1) 46%);
+  background-color: black;
 }
+
+
+.container-bottom {
+  
+  min-height: 90vh;
+}
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
 
 

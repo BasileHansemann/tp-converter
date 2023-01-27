@@ -10,22 +10,24 @@ function Amount() {
   }
   console.log(Euro);
   return (
-    <div className="amount">
-      <div className="amount-top">
-        <p className="amount-text">montant : </p>
-        <input
-          className="amount-input"
-          type="number"
-          value={baseAmount}
-          onChange={(event) => {
-            let newNumber = event.target.value;
-            if (newNumber === "") {
-              newNumber = 0;
-            }
-            setBaseAmount(newNumber);
-          }}
-        />{" "}
-        <p>{Euro}</p>
+    <div className="container-bottom">
+      <div className="amount">
+        <div className="amount-top">
+          <p className="amount-text">montant : </p>
+          <input
+            className="amount-input"
+            type="number"
+            value={baseAmount}
+            onChange={(event) => {
+              let newNumber = event.target.value;
+              if (newNumber === "") {
+                newNumber = 0;
+              }
+              setBaseAmount(newNumber);
+            }}
+          />{" "}
+          <p>{Euro}</p>
+        </div>
       </div>
       <ul>
         <CurrenciesList baseAmount={baseAmount} />

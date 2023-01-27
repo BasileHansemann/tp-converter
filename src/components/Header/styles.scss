@@ -1,14 +1,28 @@
 .header {
-    height: 50px;
+  
+    min-height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px 10px 0 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.426);
-
+  
+    border-bottom: 0.2rem solid #fff;
+  
+    
+    box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #1385fe,
+              0 0 0.8rem #1385fe,
+              0 0 2.8rem #1385fe,
+              inset 0 0 1.3rem #1385fe;
+  
     &-title {
-        font-weight: 800;
-        font-size: xx-large;
+      font-weight: 700;
+      font-size: xx-large;
+      color: #fff;
+        text-shadow:  0 0 7px #fff, 
+                 0 0 10px #fff, 
+                 0 0 42px rgb(18, 92, 230),   
+                 0 0 77px rgb(18, 92, 230), 
+                 0 0 100px rgb(18, 92, 230)
     }
-}
-
+  }
