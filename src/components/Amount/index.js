@@ -8,7 +8,7 @@ function Amount() {
   if (baseAmount > 1) {
     Euro = "Euros";
   }
-  console.log(Euro);
+  // console.log(Euro);
   return (
     <div className="container-bottom">
       <div className="amount">

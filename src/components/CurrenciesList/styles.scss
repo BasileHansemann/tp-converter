@@ -13,12 +13,7 @@
       width: 80%;
       border-radius: 3px;
       border: 2px solid white;
-      // box-shadow: 0 0 .2rem #fff,
-      //   0 0 .2rem #fff,
-      //   0 0 2rem #1385fe,
-      //   0 0 0.8rem #1385fe,
-      //   0 0 2.8rem #1385fe,
-      //   inset 0 0 1.3rem #1385fe;
+  
     }
   
     &-item {
@@ -31,12 +26,7 @@
       &:hover {
         cursor: pointer;
         background-color: rgb(131, 137, 139);
-        // box-shadow: 0 0 .2rem #fff,
-        // 0 0 .2rem #fff,
-        // 0 0 2rem #1385fe,
-        // 0 0 0.8rem #1385fe,
-        // 0 0 2.8rem #1385fe,
-        // inset 0 0 1.3rem #1385fe;
+    
         transition-duration: 0.2s;
       }
     }

@@ -2,13 +2,21 @@
 @use 'vars';
 
 body {
-  // background: radial-gradient(circle, rgba(9,9,121,1) 4%, rgba(0,212,255,1) 100%);
-  background-color: white;
+  background-color: rgb(211, 208, 208);
   font-family: 'League Spartan', sans-serif;
   font-size: 1.2rem;
   letter-spacing: 0.05em;
   font-weight: 700;
- color: rgb(17, 17, 17);
-  
+  color: rgb(17, 17, 17);
+  transition-duration: 1s;
+
+
 }
+
+.-dark{
+  background-color: black;
+  color: rgb(248, 243, 236);
+  transition-duration: 1s;
+ }
+
 

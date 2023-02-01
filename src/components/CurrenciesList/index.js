@@ -8,7 +8,7 @@ function CurrenciesList({ baseAmount }) {
   let [currencieName, setCurrencieName] = useState("Euro");
   let result = baseAmount * currencieValue;
   const roundedResult = Math.round(result * 100) / 100;
-  console.log(roundedResult);
+  // console.log(roundedResult);
 
   const handleClick = (e) => {
     setCurrencieValue(e.currencieItem.rate);

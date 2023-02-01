@@ -1,6 +1,8 @@
 import "./styles.scss";
 
 function Result({ roundedResult, currencieName }) {
+
+ 
   return (
     <div className="result">
       <p className="result-title">resultat : </p>
