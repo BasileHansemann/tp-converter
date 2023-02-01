@@ -5,7 +5,7 @@ import moon from '../../assets/624106.png';
 function Header() {
   const colorFont = document.querySelector("body");
   let darkMode = "";
-  console.log(localStorage.isDark);
+  // console.log(colorFont);
   if(localStorage.isDark==="true"){
     colorFont.classList.toggle("-dark");
     darkMode=!darkMode;

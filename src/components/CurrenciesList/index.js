@@ -1,6 +1,6 @@
 import data from "../../data/currencies";
 import Result from "../Result";
-import { useState } from "react";
+import { useState} from "react";
 import "./styles.scss";
 
 function CurrenciesList({ baseAmount }) {
@@ -8,7 +8,13 @@ function CurrenciesList({ baseAmount }) {
   let [currencieName, setCurrencieName] = useState("Euro");
   let result = baseAmount * currencieValue;
   const roundedResult = Math.round(result * 100) / 100;
-  // console.log(roundedResult);
+
+  let [isHidden, setHidden] = useState(false);
+
+
+  const handleHidde = () => {
+    setHidden(!isHidden);
+  };
 
   const handleClick = (e) => {
     setCurrencieValue(e.currencieItem.rate);
@@ -18,19 +24,23 @@ function CurrenciesList({ baseAmount }) {
   return (
     <div>
       <div className="currencies">
-        <p className="currencies-title">choisissez la devises : </p>
-
-        <div className="currencies-List">
-          {data.map((currencieItem) => (
-            <li
-              className="currencies-item"
-              onClick={(e) => handleClick({ currencieItem })}
-              key={currencieItem.name}
-            >
-              {currencieItem.name} : {currencieItem.rate}
-            </li>
-          ))}
-        </div>
+      {!isHidden ?
+        <><p className="currencies-title">choisissez la devises : </p>
+          <div className="currencies-List">
+            {data.map((currencieItem) => (
+              <li
+                className="currencies-item"
+                onClick={(e) => handleClick({ currencieItem })}
+                key={currencieItem.name}
+              >
+                {currencieItem.name} : {currencieItem.rate}
+              </li>
+            ))}
+          </div></>
+         : ""}
+        <button className="currencies-button" onClick={handleHidde}>
+          {isHidden ? "afficher devises" : "masquer devises"}
+        </button>
       </div>
       <Result roundedResult={roundedResult} currencieName={currencieName} />
     </div>
