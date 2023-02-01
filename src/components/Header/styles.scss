@@ -5,24 +5,24 @@
     align-items: center;
     justify-content: center;
   
-    border-bottom: 0.2rem solid #fff;
+    border-bottom: 2px solid white;
   
     
-    box-shadow: 0 0 .2rem #fff,
-              0 0 .2rem #fff,
-              0 0 2rem #1385fe,
-              0 0 0.8rem #1385fe,
-              0 0 2.8rem #1385fe,
-              inset 0 0 1.3rem #1385fe;
+    // box-shadow: 0 0 .2rem #fff,
+    //           0 0 .2rem #fff,
+    //           0 0 2rem #1385fe,
+    //           0 0 0.8rem #1385fe,
+    //           0 0 2.8rem #1385fe,
+    //           inset 0 0 1.3rem #1385fe;
   
     &-title {
       font-weight: 700;
       font-size: xx-large;
-      color: #fff;
-        text-shadow:  0 0 7px #fff, 
-                 0 0 10px #fff, 
-                 0 0 42px rgb(18, 92, 230),   
-                 0 0 77px rgb(18, 92, 230), 
-                 0 0 100px rgb(18, 92, 230)
+      color: black;
+        // text-shadow:  0 0 7px #fff, 
+        //          0 0 10px #fff, 
+        //          0 0 42px rgb(18, 92, 230),   
+        //          0 0 77px rgb(18, 92, 230), 
+        //          0 0 100px rgb(18, 92, 230)
     }
   }

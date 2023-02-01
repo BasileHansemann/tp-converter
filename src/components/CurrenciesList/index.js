@@ -18,7 +18,7 @@ function CurrenciesList({ baseAmount }) {
   return (
     <div>
       <div className="currencies">
-        <p className="currencies-title">devises : </p>
+        <p className="currencies-title">choisissez la devises : </p>
 
         <div className="currencies-List">
           {data.map((currencieItem) => (
