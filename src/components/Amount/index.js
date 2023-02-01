@@ -12,8 +12,8 @@ function Amount() {
   return (
     <div className="container-bottom">
       <div className="amount">
+        <p className="amount-text">montant en €uros à convertir: </p>
         <div className="amount-top">
-          <p className="amount-text">montant en €uros à convertir: </p>
           <input
             className="amount-input"
             type="number"
