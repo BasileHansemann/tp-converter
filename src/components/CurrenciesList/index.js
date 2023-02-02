@@ -3,7 +3,7 @@ import Result from "../Result";
 import { useState} from "react";
 import "./styles.scss";
 
-function CurrenciesList({ baseAmount }) {
+function CurrenciesList({ baseAmount, dataFinal }) {
   let [currencieValue, setCurrencieValue] = useState("1");
   let [currencieName, setCurrencieName] = useState("Euro");
   let result = baseAmount * currencieValue;
@@ -17,8 +17,8 @@ function CurrenciesList({ baseAmount }) {
   };
 
   const handleClick = (e) => {
-    setCurrencieValue(e.currencieItem.rate);
-    setCurrencieName(e.currencieItem.name);
+    setCurrencieValue(e.currencieItem[1]);
+    setCurrencieName(e.currencieItem[0]);
   };
 
   return (
@@ -27,13 +27,13 @@ function CurrenciesList({ baseAmount }) {
       {!isHidden ?
         <><p className="currencies-title">choisissez la devises : </p>
           <div className="currencies-List">
-            {data.map((currencieItem) => (
+            {dataFinal.map((currencieItem) => (
               <li
                 className="currencies-item"
                 onClick={(e) => handleClick({ currencieItem })}
-                key={currencieItem.name}
+                key={currencieItem[0]}
               >
-                {currencieItem.name} : {currencieItem.rate}
+                {currencieItem[0]} : {currencieItem[1]}
               </li>
             ))}
           </div></>

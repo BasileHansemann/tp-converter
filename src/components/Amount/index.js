@@ -2,7 +2,8 @@ import { useState } from "react";
 import CurrenciesList from "../CurrenciesList";
 import "./styles.scss";
 
-function Amount() {
+function Amount({dataFinal}) {
+ 
   let [baseAmount, setBaseAmount] = useState("1");
   let Euro = "Euro";
   if (baseAmount > 1) {
@@ -30,7 +31,7 @@ function Amount() {
         </div>
       </div>
       <ul>
-        <CurrenciesList baseAmount={baseAmount} />
+        <CurrenciesList baseAmount={baseAmount} dataFinal={dataFinal}/>
       </ul>
     </div>
   );
