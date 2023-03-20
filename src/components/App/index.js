@@ -3,6 +3,7 @@ import axios from "axios";
 import Header from "../Header";
 import React, { useState, useEffect } from "react";
 import "./styles.scss";
+import Footer from "../Footer";
 //site de recupération des taux de change  https://app.abstractapi.com/
 function App() {
   let [dataChange, setDataChange] = useState("");
@@ -32,6 +33,7 @@ function App() {
     <div className="app">
       <Header />
       <Amount dataFinal={dataFinal} />
+      <Footer />
     </div>
   );
 }
